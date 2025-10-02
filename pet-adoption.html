@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Pet Adoption List</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav class="navbar">
+    <a href="index.html">Meal Planner</a>
+    <a href="pet-adoption.html">Check out the final project</a>
+  </nav>
+  <div class="container">
+    <h1>Pet Adoption List</h1>
+    <form id="pet-form">
+      <input type="text" id="pet-name" placeholder="Pet Name" required>
+      <select id="pet-type" required>
+        <option value="">Type</option>
+        <option value="dog">Dog</option>
+        <option value="cat">Cat</option>
+      </select>
+      <input type="number" id="pet-age" placeholder="Age" min="0" required>
+      <button type="submit">Add Pet</button>
+    </form>
+    <div class="controls">
+      <label>Sort by age:
+        <select id="sort-age">
+          <option value="none">None</option>
+          <option value="asc">Youngest first</option>
+          <option value="desc">Oldest first</option>
+        </select>
+      </label>
+      <label>Filter by type:
+        <select id="filter-type">
+          <option value="all">All</option>
+          <option value="dog">Dog</option>
+          <option value="cat">Cat</option>
+        </select>
+      </label>
+    </div>
+    <div id="pets-list"></div>
+  </div>
+  <script src="pet-adoption.js"></script>
+</body>
+</html>

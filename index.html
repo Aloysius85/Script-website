@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Meal Planner</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav class="navbar">
+    <a href="index.html">Meal Planner</a>
+    <a href="pet-adoption.html">Check out the final project</a>
+  </nav>
+  <div class="container">
+    <h2>Weekly Meal Planner</h2>
+    <form id="mealForm">
+      <label for="daySelect">Select Day:</label>
+      <select id="daySelect">
+        <option value="Monday">Monday</option>
+        <option value="Tuesday">Tuesday</option>
+        <option value="Wednesday">Wednesday</option>
+        <option value="Thursday">Thursday</option>
+        <option value="Friday">Friday</option>
+        <option value="Saturday">Saturday</option>
+        <option value="Sunday">Sunday</option>
+      </select>
+      <label for="mealType">Meal Type:</label>
+      <select id="mealType">
+        <option value="Breakfast">Breakfast</option>
+        <option value="Lunch">Lunch</option>
+        <option value="Dinner">Dinner</option>
+      </select>
+      <label for="mealName">Meal Name:</label>
+      <input type="text" id="mealName" required placeholder="e.g. Pancakes">
+      <button type="submit">Add Meal</button>
+    </form>
+    <div id="mealTable"></div>
+  </div>
+  <script src="meal-planner.js"></script>
+</body>
+</html>
