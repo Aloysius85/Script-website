@@ -78,13 +78,14 @@ form label {
   color: #d9e6f2;
 }
 form input, form select {
-  padding: 10px;
-  border-radius: 6px;
+  padding: 14px; /* bigger */
+  border-radius: 8px; /* rounder */
   border: 1px solid #334155;
   background: #0b1322;
   color: #f5f5f5;
   transition: border 0.2s;
   flex: 1 1 150px;
+  font-size: 1em; /* bigger text */
 }
 form input:focus, form select:focus {
   border: 1px solid #00d9ff;
@@ -94,11 +95,12 @@ form button {
   background: linear-gradient(90deg, #00d9ff, #0077b6);
   color: #fff;
   border: none;
-  padding: 10px 18px;
-  border-radius: 6px;
+  padding: 14px 24px; /* bigger */
+  border-radius: 8px;
   cursor: pointer;
   transition: background 0.3s, transform 0.2s;
-  flex: 1 1 100px;
+  flex: 1 1 120px;
+  font-size: 1em; /* bigger text */
 }
 form button:hover {
   background: linear-gradient(90deg, #00b4d8, #023e8a);
@@ -134,6 +136,33 @@ form button:hover {
   transition: background 0.3s;
 }
 
+/* Pet Adoption Cards */
+.pet-list {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+.pet-card {
+  flex: 1 1 250px;
+  padding: 20px;
+  background: #0d1b2a;
+  border-radius: 12px;
+  border: 1px solid #1e2a38;
+  text-align: center;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.5);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.pet-card:hover {
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.7);
+}
+.pet-card h3 {
+  color: #00d9ff;
+  margin-bottom: 12px;
+}
+
 /* Footer */
 .footer {
   text-align: center;
@@ -167,5 +196,8 @@ form button:hover {
   form input, form select, form button {
     width: 100%;
     flex: unset;
+  }
+  .pet-list {
+    flex-direction: column;
   }
 }
