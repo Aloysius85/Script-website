@@ -139,28 +139,52 @@ form button:hover {
 /* Pet Adoption Cards */
 .pet-list {
   display: flex;
-  gap: 20px;
+  gap: 24px;
   justify-content: center;
   flex-wrap: wrap;
   margin-top: 40px;
 }
 .pet-card {
-  flex: 1 1 250px;
-  padding: 20px;
+  flex: 1 1 280px;
+  max-width: 320px;
+  padding: 24px;
   background: #0d1b2a;
-  border-radius: 12px;
+  border-radius: 16px;
   border: 1px solid #1e2a38;
   text-align: center;
-  box-shadow: 0 4px 16px rgba(0,0,0,0.5);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.6);
   transition: transform 0.3s, box-shadow 0.3s;
 }
 .pet-card:hover {
-  transform: translateY(-6px) scale(1.03);
-  box-shadow: 0 6px 20px rgba(0,0,0,0.7);
+  transform: translateY(-8px) scale(1.05);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.8);
 }
 .pet-card h3 {
   color: #00d9ff;
   margin-bottom: 12px;
+  font-size: 1.3em;
+}
+.pet-card p {
+  color: #d9e6f2;
+  font-size: 0.95em;
+  margin-bottom: 16px;
+}
+.pet-card button {
+  background: linear-gradient(90deg, #00d9ff, #0077b6);
+  color: #fff;
+  border: none;
+  padding: 14px 28px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+  font-size: 1.05em;
+  font-weight: 600;
+  width: 100%;
+  max-width: 220px;
+}
+.pet-card button:hover {
+  background: linear-gradient(90deg, #00b4d8, #023e8a);
+  transform: translateY(-3px);
 }
 
 /* Footer */
