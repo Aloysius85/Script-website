@@ -6,12 +6,21 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <!-- Navbar -->
   <nav class="navbar">
     <a href="index.html">Meal Planner</a>
     <a href="pet-adoption.html">Check out the final project</a>
   </nav>
+
+  <!-- Hero Section -->
+  <header class="hero">
+    <h1>🐾 Pet Adoption Center</h1>
+    <p>Find your furry friend and give them a loving home ❤️</p>
+  </header>
+
+  <!-- Main Content -->
   <div class="container">
-    <h1>Pet Adoption List</h1>
+    <h2>Add a Pet</h2>
     <form id="pet-form">
       <input type="text" id="pet-name" placeholder="Pet Name" required>
       <select id="pet-type" required>
@@ -20,8 +29,9 @@
         <option value="cat">Cat</option>
       </select>
       <input type="number" id="pet-age" placeholder="Age" min="0" required>
-      <button type="submit">Add Pet</button>
+      <button type="submit">➕ Add Pet</button>
     </form>
+
     <div class="controls">
       <label>Sort by age:
         <select id="sort-age">
@@ -38,8 +48,17 @@
         </select>
       </label>
     </div>
-    <div id="pets-list"></div>
+
+    <!-- Pet List -->
+    <h2>Available Pets</h2>
+    <div id="pets-list" class="pet-list"></div>
   </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>⚡ Built with ❤️ by Tech Nxxt</p>
+  </footer>
+
   <script src="pet-adoption.js"></script>
 </body>
 </html>
