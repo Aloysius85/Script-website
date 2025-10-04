@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Meal Planner</title>
+  <title>Pet Adoption - Final Project</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -14,42 +14,52 @@
 
   <!-- Hero Section -->
   <header class="hero">
-    <h1>🍽️ Smart Weekly Meal Planner</h1>
-    <p>Plan your meals, stay healthy, and stay organized — all in one place.</p>
+    <h1>🐶 Adopt a Pet, Change a Life 🐱</h1>
+    <p>Find your new best friend today. Every pet deserves a loving home.</p>
   </header>
 
   <!-- Main Container -->
   <div class="container">
-    <h2>Weekly Meal Planner</h2>
-    <form id="mealForm">
-      <label for="daySelect">Select Day:</label>
-      <select id="daySelect">
-        <option value="Monday">Monday</option>
-        <option value="Tuesday">Tuesday</option>
-        <option value="Wednesday">Wednesday</option>
-        <option value="Thursday">Thursday</option>
-        <option value="Friday">Friday</option>
-        <option value="Saturday">Saturday</option>
-        <option value="Sunday">Sunday</option>
-      </select>
-      <label for="mealType">Meal Type:</label>
-      <select id="mealType">
-        <option value="Breakfast">Breakfast</option>
-        <option value="Lunch">Lunch</option>
-        <option value="Dinner">Dinner</option>
-      </select>
-      <label for="mealName">Meal Name:</label>
-      <input type="text" id="mealName" required placeholder="e.g. Pancakes">
-      <button type="submit">Add Meal</button>
-    </form>
-    <div id="mealTable"></div>
+    <h2>Meet Our Lovely Pets</h2>
+    
+    <div class="pet-list">
+      <!-- Pet 1 -->
+      <div class="pet-card">
+        <img src="https://place-puppy.com/300x200" alt="Cute Dog" style="width:100%; border-radius:10px; margin-bottom:15px;">
+        <h3>Bella</h3>
+        <p>2 years old • Female • Golden Retriever</p>
+        <button>Adopt Me</button>
+      </div>
+
+      <!-- Pet 2 -->
+      <div class="pet-card">
+        <img src="https://placekitten.com/300/200" alt="Cute Cat" style="width:100%; border-radius:10px; margin-bottom:15px;">
+        <h3>Luna</h3>
+        <p>1 year old • Female • Domestic Shorthair</p>
+        <button>Adopt Me</button>
+      </div>
+
+      <!-- Pet 3 -->
+      <div class="pet-card">
+        <img src="https://place-puppy.com/301x201" alt="Playful Dog" style="width:100%; border-radius:10px; margin-bottom:15px;">
+        <h3>Max</h3>
+        <p>3 years old • Male • Beagle</p>
+        <button>Adopt Me</button>
+      </div>
+
+      <!-- Pet 4 -->
+      <div class="pet-card">
+        <img src="https://placekitten.com/301/201" alt="Adorable Cat" style="width:100%; border-radius:10px; margin-bottom:15px;">
+        <h3>Whiskers</h3>
+        <p>4 months old • Male • Tabby</p>
+        <button>Adopt Me</button>
+      </div>
+    </div>
   </div>
 
   <!-- Footer -->
   <footer class="footer">
     <p>⚡ Built with ❤️ by Tech Nxxt</p>
   </footer>
-
-  <script src="meal-planner.js"></script>
 </body>
 </html>
