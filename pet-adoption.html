@@ -5,9 +5,78 @@
   <title>Pet Adoption List</title>
   <link rel="stylesheet" href="styles.css">
   <style>
-    /* Extra styling for pet adoption page */
+    /* General Reset */
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f0f4f8;
+      color: #111;
+      line-height: 1.6;
+    }
 
-    /* Make form inline */
+    h1, h2, h3 {
+      margin: 0 0 10px;
+    }
+
+    /* Navbar */
+    nav {
+      width: 100%;
+      background: linear-gradient(90deg, #0d1b2a, #000814);
+      padding: 16px 0;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.6);
+    }
+
+    nav a {
+      color: #ffffff;
+      text-decoration: none;
+      font-size: 1.05em;
+      font-weight: 500;
+      padding: 10px 20px;
+      margin: 0 10px;
+      border: 1px solid #00d9ff;
+      border-radius: 6px;
+      transition: all 0.3s ease;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    nav a:hover {
+      background: #00d9ff;
+      color: #000814;
+    }
+
+    /* Hero Section */
+    .hero {
+      text-align: center;
+      padding: 60px 20px;
+      background: linear-gradient(135deg, #0077cc, #00b4d8);
+      color: white;
+    }
+
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+      text-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      opacity: 0.95;
+    }
+
+    /* Container */
+    .container {
+      max-width: 1000px;
+      margin: 30px auto;
+      padding: 0 20px;
+    }
+
+    /* Form */
     #pet-form {
       display: flex;
       flex-wrap: wrap;
@@ -21,6 +90,7 @@
       padding: 10px;
       border: 1px solid #ccc;
       border-radius: 8px;
+      font-size: 1rem;
     }
 
     #pet-form button {
@@ -38,6 +108,27 @@
       background: linear-gradient(135deg, #0077cc, #004080);
     }
 
+    /* Controls */
+    .controls {
+      margin: 15px 0;
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .controls label {
+      font-size: 0.95rem;
+      color: #111;
+      font-weight: 500;
+    }
+
+    .controls select {
+      margin-left: 8px;
+      padding: 6px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+    }
+
     /* Pet list grid */
     .pet-list {
       display: grid;
@@ -47,12 +138,13 @@
     }
 
     .pet-card {
-      background: #f9f9f9;
+      background: #ffffff;
       border-radius: 12px;
       padding: 16px;
       text-align: center;
       box-shadow: 0 4px 10px rgba(0,0,0,0.1);
       transition: transform 0.2s ease-in-out;
+      color: #111; /* ensure readable text */
     }
 
     .pet-card:hover {
@@ -61,6 +153,12 @@
 
     .pet-card h3 {
       margin-bottom: 8px;
+      color: #000;
+      font-weight: 600;
+    }
+
+    .pet-card p {
+      font-size: 0.95rem;
       color: #333;
     }
 
@@ -80,22 +178,13 @@
       background: linear-gradient(135deg, #28a745, #1e7e34);
     }
 
-    .controls {
-      margin: 15px 0;
-      display: flex;
-      gap: 20px;
-      flex-wrap: wrap;
-    }
-
-    .controls label {
-      font-size: 0.95rem;
-      color: #333;
-    }
-
-    .controls select {
-      margin-left: 8px;
-      padding: 6px;
-      border-radius: 6px;
+    /* Footer */
+    .footer {
+      text-align: center;
+      padding: 20px;
+      background: #0d1b2a;
+      color: white;
+      margin-top: 40px;
     }
   </style>
 </head>
@@ -188,11 +277,7 @@
   </div>
 
   <!-- Footer -->
-  <footer class="footer">
-    <p>⚡ Built with ❤️ by Tech Nxxt</p>
-  </footer>
-
+ 
   <script src="pet-adoption.js"></script>
 </body>
 </html>
-
