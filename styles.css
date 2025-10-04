@@ -170,29 +170,30 @@ label {
 /* Responsive Design */
 @media (max-width: 950px) {
   .container {
-    max-width: 95vw;
-    padding: 32px;
+    max-width: 98vw;
+    padding: 48px;
   }
   .pet-card {
-    width: 80vw;
-    min-width: 180px;
+    width: 90vw;
+    min-width: 220px;
   }
 }
 @media (max-width: 700px) {
   .container {
-    padding: 28px;
+    padding: 36px;
   }
   .pet-card {
-    width: 98vw;
-    min-width: 150px;
+    width: 99vw;
+    min-width: 180px;
   }
   form {
     flex-direction: column;
-    gap: 18px;
+    gap: 28px;
   }
   .controls {
     flex-direction: column;
-    gap: 20px;
+    gap: 32px;
   }
 }
+
 
